@@ -1,0 +1,19 @@
+.issueDetails {
+  margin-top: 5%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.commentfeed {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 50% 20%;
+  justify-content: space-around;
+  /* gap:10% */
+}
+.issueheader {
+  width: 70%;
+  font-weight: 100;
+  font-size: 20px;
+}
