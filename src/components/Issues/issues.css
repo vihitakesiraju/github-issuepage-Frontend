@@ -37,7 +37,7 @@ h5 {
 .pagination > .active > a:focus,
 .pagination > .active > span:focus {
   /* background-color: #47ccde ; */
-  border-color: #3574d4;
+  border-color: #0d3b80;
   outline: none;
 }
 .pagination > li > a,

@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faCheckCircle,
   faComments,
+  faCommentAlt,
   faExclamationCircle,
 } from "@fortawesome/free-solid-svg-icons";
 import Axios from "axios";
@@ -60,12 +61,12 @@ class Issue extends Component {
             return (
               <span
                 key={badge.id}
+                className="badge badge-pill badge-light"
                 style={{
                   backgroundColor: `#${badge.color}`,
                   fontSize: "15px",
                   color: "",
                 }}
-                className="badge"
               >
                 {badge.name}
               </span>
@@ -84,16 +85,16 @@ class Issue extends Component {
                 }}
                 style={{ color: "black" }}
               >
-                <FontAwesomeIcon icon={faComments} color="gray" />
+                <FontAwesomeIcon icon={faCommentAlt} color="gray" />
               </Link>
             ) : (
-              <FontAwesomeIcon icon={faComments} color="gray" />
+              <FontAwesomeIcon icon={faCommentAlt} color="gray" />
             )}{" "}
           </span>
           {issuedata.comments}
         </h5>
 
-        <p style={{ fontSize: "20px", display: "flex", fontFamily: "times" }}>
+        <p style={{ fontSize: "18px", display: "flex", fontFamily: "times" }}>
           #{issuedata.number} opened on {issuedata.created_at.split("T")[0]} by{" "}
           {issuedata.user.login}{" "}
         </p>

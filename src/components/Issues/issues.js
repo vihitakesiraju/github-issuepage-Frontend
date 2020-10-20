@@ -6,7 +6,6 @@ import "./issues.css";
 //import Pagination from "../Pagination/pagination";
 import Issue from "./issue";
 import Axios from "axios";
-import { getIssues } from "../Api/api";
 
 /////////////////////
 class Issues extends Component {
@@ -46,15 +45,6 @@ class Issues extends Component {
       this.state.firstissue + this.state.issuesperpage
     );
     //console.log("data_list handle data"+data_list[0])
-
-    //   issuelist = displaylist.map((issue) => {
-    //     console.log("issue is" + issue);
-    //     let rec = {
-    //       issue: issue,
-    //       props: this.props,
-    //     };
-    //     return <Issue props={rec} />;
-    //   });
 
     const d_list = data_list.map((data) => {
       //console.log("data_list d_list")
